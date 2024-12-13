@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+
+<html>
+
+<body>
+
+<main id="main">
+
+<div id="rule">
+
+اكتب التوكن ورابط الملف
+
+</div><br>
+
+<input id="phone" placeholder="                     هنا التوكن "><br><div id="rule2"></div>
+
+<input  id="M311U" placeholder="    اكتب هنا رابط الملف "><br><div id="rule2"></div>
+
+<a href="" id="links"><button onclick="createlink()" id="clck">عمل ويب هوك </button></a>
+
+</main>
+
+<script>
+
+function createlink(){
+
+var n,m;
+
+n = document.getElementById("M311U").value
+
+m = document.getElementById("phone").value
+
+var snm = "Https://api.telegram.org/bot"+m+"/setwebhook?url="+n
+
+document.getElementById("links").href = snm
+
+}
+
+</script>
+
+<style>
+
+    body {
+
+    text-align:center;
+
+    justify-content:center;
+
+    color:#000;
+
+    background-color:#fff;
+
+}
+
+#rule{
+
+    font-size:20px;margin-top:150px;
+
+}
+
+#rule2{
+
+    font-size:20px;margin-top:10px;
+
+}
+
+#clck{
+
+    height:40px;width:300px;background-color:#736F6E;border-radius:5%;
+
+}
+
+input[type="tel"]{
+
+    border:none;border-bottom:3px solid #555;font-size:15px;text-align:center;
+
+}
+
+main{
+
+    background-color:#fff;
+
+}
+
+textarea{
+
+    text-align:center;margin-top:20px;
+
+}
+
+</style>
+
+</body>
+
+</html>
+
+<div>
+     ㅤ
+</div>
+
